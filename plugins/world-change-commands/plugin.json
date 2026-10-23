@@ -1,0 +1,10 @@
+{
+  "id": "world-change-commands",
+  "name": "World Change Commands",
+  "version": "1.0.0",
+  "description": "Runs a delayed command workflow whenever a bot changes world or backend server.",
+  "category": "Automation",
+  "icon": "◈",
+  "route": "automation",
+  "permissions": ["bot.chat", "bot.world"]
+}

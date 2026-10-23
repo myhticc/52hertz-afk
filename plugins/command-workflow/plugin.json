@@ -1,0 +1,10 @@
+{
+  "id": "command-workflow",
+  "name": "Command Workflow",
+  "version": "1.0.0",
+  "description": "Provides unlimited, reorderable command steps with individual delays.",
+  "category": "Automation",
+  "icon": "☷",
+  "route": "automation",
+  "permissions": ["bot.chat", "automation.write"]
+}

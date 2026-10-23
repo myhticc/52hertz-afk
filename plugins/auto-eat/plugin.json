@@ -1,0 +1,10 @@
+{
+  "id": "auto-eat",
+  "name": "Auto Eat",
+  "version": "1.0.0",
+  "description": "Consumes an available food item when the bot reaches the configured hunger level.",
+  "category": "Gameplay",
+  "icon": "◉",
+  "route": "plugins",
+  "permissions": ["bot.inventory", "bot.consume"]
+}

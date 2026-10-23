@@ -1,0 +1,10 @@
+{
+  "id": "conditional-chat",
+  "name": "Conditional Chat",
+  "version": "1.0.0",
+  "description": "Matches incoming chat text and sends a delayed response or command.",
+  "category": "Automation",
+  "icon": "⌁",
+  "route": "automation",
+  "permissions": ["bot.chat.read", "bot.chat.write"]
+}

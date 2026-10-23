@@ -1,0 +1,10 @@
+{
+  "id": "scheduled-messages",
+  "name": "Scheduled Messages",
+  "version": "1.0.0",
+  "description": "Sends a configured message or command at a repeating interval.",
+  "category": "Automation",
+  "icon": "◷",
+  "route": "automation",
+  "permissions": ["bot.chat", "scheduler"]
+}

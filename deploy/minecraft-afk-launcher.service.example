@@ -1,0 +1,40 @@
+[Unit]
+Description=Minecraft AFK Launcher private web control
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=afklauncher
+Group=afklauncher
+WorkingDirectory=/opt/minecraft-afk-launcher
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/minecraft-afk-launcher.env
+ExecStart=/usr/local/bin/node src/index.js
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65535
+TasksMax=4096
+MemoryMax=10G
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectClock=true
+ProtectHostname=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
+ReadWritePaths=/opt/minecraft-afk-launcher
+
+[Install]
+WantedBy=multi-user.target

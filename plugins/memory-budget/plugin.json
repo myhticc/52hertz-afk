@@ -1,0 +1,10 @@
+{
+  "id": "memory-budget",
+  "name": "Memory Budget",
+  "version": "1.0.0",
+  "description": "Pauses new connections when the launcher's configured RAM budget is reached.",
+  "category": "Performance",
+  "icon": "▤",
+  "route": "plugins",
+  "permissions": ["metrics.memory", "bot.connection.pause"]
+}

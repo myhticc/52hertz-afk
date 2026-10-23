@@ -1,0 +1,10 @@
+{
+  "id": "position-tracker",
+  "name": "Position Tracker",
+  "version": "1.0.0",
+  "description": "Displays each active bot's coordinates and current dimension.",
+  "category": "Observability",
+  "icon": "⌖",
+  "route": "accounts",
+  "permissions": ["bot.position", "bot.world"]
+}

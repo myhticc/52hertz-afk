@@ -1,0 +1,10 @@
+{
+  "id": "broadcast",
+  "name": "Broadcast",
+  "version": "1.0.0",
+  "description": "Sends messages from all active, selected, first-X, or grouped accounts.",
+  "category": "Messaging",
+  "icon": "▣",
+  "route": "messages",
+  "permissions": ["bot.chat", "groups.read"]
+}

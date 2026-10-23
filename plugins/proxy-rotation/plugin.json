@@ -1,0 +1,10 @@
+{
+  "id": "proxy-rotation",
+  "name": "Proxy Rotation",
+  "version": "1.0.0",
+  "description": "Moves each account to its next SOCKS5 proxy after a new connection attempt.",
+  "category": "Connection",
+  "icon": "⇄",
+  "route": "settings",
+  "permissions": ["proxy.read", "bot.connection"]
+}

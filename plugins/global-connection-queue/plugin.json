@@ -1,0 +1,10 @@
+{
+  "id": "global-connection-queue",
+  "name": "Global Connection Queue",
+  "version": "1.0.0",
+  "description": "Limits every instance to one shared connection schedule to prevent login bursts.",
+  "category": "Performance",
+  "icon": "≋",
+  "route": "optimization",
+  "permissions": ["bot.connection", "scheduler"]
+}

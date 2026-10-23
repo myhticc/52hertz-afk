@@ -1,0 +1,2 @@
+# No proxy addresses or credentials are distributed.
+# Add your own SOCKS5 entries to a local proxies.txt file if needed.

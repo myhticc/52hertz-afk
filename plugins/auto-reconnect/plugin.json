@@ -1,0 +1,10 @@
+{
+  "id": "auto-reconnect",
+  "name": "Auto Reconnect",
+  "version": "1.0.0",
+  "description": "Reconnects disconnected or kicked bots using configurable backoff.",
+  "category": "Connection",
+  "icon": "↻",
+  "route": "settings",
+  "permissions": ["bot.connection"]
+}

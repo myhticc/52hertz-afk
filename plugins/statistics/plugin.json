@@ -1,0 +1,10 @@
+{
+  "id": "statistics",
+  "name": "Statistics",
+  "version": "1.0.0",
+  "description": "Collects connection, error, uptime, proxy, and memory metrics.",
+  "category": "Observability",
+  "icon": "⌗",
+  "route": "statistics",
+  "permissions": ["metrics.read"]
+}

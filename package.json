@@ -1,0 +1,90 @@
+{
+  "name": "localhost-minecraft-afk-fleet",
+  "version": "1.7.1",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "author": "Local AFK Launcher",
+  "desktopName": "Minecraft AFK Launcher",
+  "description": "Local Minecraft 1.21.11 AFK bot manager",
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "panel": "node src/index.js",
+    "build:linux": "electron-builder --linux AppImage --x64",
+    "generate": "node scripts/generate-accounts.js",
+    "check": "node --check src/index.js && node --check src/bot-manager.js && node --check src/bot-worker.js && node --check src/sharded-bot-manager.js && node --check src/dashboard.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "mineflayer": "4.38.0",
+    "qrcode": "1.5.4",
+    "safe-regex2": "5.1.1",
+    "socks": "2.8.7"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  },
+  "devDependencies": {
+    "electron": "44.2.0",
+    "electron-builder": "26.15.7"
+  },
+  "build": {
+    "appId": "local.minecraft.afklauncher",
+    "productName": "Minecraft AFK Launcher",
+    "electronDist": "node_modules/electron/dist",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "src/config.js",
+      "src/proxies.js",
+      "src/names.js",
+      "src/presets.js",
+      "src/server-address.js",
+      "src/bot-manager.js",
+      "src/bot-worker.js",
+      "src/sharded-bot-manager.js",
+      "src/plugin-manager.js",
+      "src/log-exporter.js",
+      "src/workflow-v2.js",
+      "src/profile-manager.js",
+      "src/external-plugin-manager.js",
+      "src/dashboard.js",
+      "src/web-ui.js",
+      "src/index.js",
+      "plugins/**/*",
+      "docs/**/*",
+      "plugin-examples/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "packaging/defaults/config.json",
+        "to": "defaults/config.json"
+      },
+      {
+        "from": "accounts.json",
+        "to": "defaults/accounts.json"
+      },
+      {
+        "from": "packaging/defaults/proxies.txt",
+        "to": "defaults/proxies.txt"
+      }
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility",
+      "icon": "build/icon.png",
+      "syncDesktopName": true,
+      "artifactName": "Minecraft-AFK-Launcher-${version}-${arch}.${ext}"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "auto-respawn",
+  "name": "Auto Respawn",
+  "version": "1.0.0",
+  "description": "Respawns a bot after death using a configurable delay.",
+  "category": "Gameplay",
+  "icon": "↻",
+  "route": "plugins",
+  "permissions": ["bot.respawn"]
+}

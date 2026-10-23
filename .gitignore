@@ -1,0 +1,36 @@
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.tmp
+
+# Local accounts, proxy credentials, and server configuration
+accounts.json
+proxies.txt
+config.json
+profiles.json
+profiles/
+profile-trash/
+backups/
+extensions/
+
+# Panel credentials, TOTP enrollment, and local certificates
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+.totp-enabled
+.totp-enabled.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

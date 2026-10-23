@@ -1,0 +1,10 @@
+{
+  "id": "log-exporter",
+  "name": "Log Exporter",
+  "version": "1.0.0",
+  "description": "Exports the current activity log as JSON, CSV, or plain text.",
+  "category": "Observability",
+  "icon": "⇩",
+  "route": "plugins",
+  "permissions": ["logs.read", "file.write"]
+}

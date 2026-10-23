@@ -1,0 +1,10 @@
+{
+  "id": "auto-armor",
+  "name": "Auto Armor",
+  "version": "1.0.0",
+  "description": "Equips the strongest available helmet, chestplate, leggings, and boots.",
+  "category": "Gameplay",
+  "icon": "♜",
+  "route": "plugins",
+  "permissions": ["bot.inventory", "bot.equip"]
+}

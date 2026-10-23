@@ -1,0 +1,10 @@
+{
+  "id": "auto-authentication",
+  "name": "Auto Authentication",
+  "version": "1.0.0",
+  "description": "Runs the initial register and login command workflow after the first spawn.",
+  "category": "Automation",
+  "icon": "◇",
+  "route": "automation",
+  "permissions": ["bot.chat", "bot.spawn"]
+}

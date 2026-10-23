@@ -1,0 +1,8 @@
+{
+  "id": "hello-afk",
+  "name": "Hello AFK",
+  "version": "1.0.0",
+  "description": "Example external plugin that demonstrates spawn and chat hooks.",
+  "main": "index.js",
+  "permissions": ["bot.chat"]
+}
